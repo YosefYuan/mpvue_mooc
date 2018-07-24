@@ -7,5 +7,10 @@ const app = new Vue(App)
 app.$mount()
 
 export default {
-
+    "window":{
+        "backgroundTextStyle":"light",
+        "navigationBarBackgroundColor": "#EA5149",
+        "navigationBarTitleText": "蜗牛图书",
+        "navigationBarTextStyle":"light"
+    }
 }
