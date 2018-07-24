@@ -1,14 +1,22 @@
+// import {dataenv} from './env'
+let dataEnvObj = {}
+// if(dataenv === 'local'){
+//     dataEnvObj = {
+//         serverHost: 'localhost',
+//         tunnelServerUrl: '',
+//         tunnelSignatureKey: '27fb7d1c161b7ca52d73cce0f1d833f9f5b5ec89',
+//         // 腾讯云相关配置可以查看云 API 秘钥控制台：https://console.cloud.tencent.com/capi
+//         qcloudAppId: '1257163370',
+//         qcloudSecretId: 'AKID41nNlxQlOr8E8rOirrfIk04veCZlNZBb',
+//         qcloudSecretKey: 'MXWIsFiFqLas1yqX2LSO8wmePzNgokW7',
+//         wxMessageToken: 'weixinmsgtoken',
+//         networkTimeout: 30000,
+//     }
+// }
+
 const CONF = {
     // local run
-    serverHost: 'localhost',
-    tunnelServerUrl: '',
-    tunnelSignatureKey: '27fb7d1c161b7ca52d73cce0f1d833f9f5b5ec89',
-      // 腾讯云相关配置可以查看云 API 秘钥控制台：https://console.cloud.tencent.com/capi
-    qcloudAppId: '1257163370',
-    qcloudSecretId: 'AKID41nNlxQlOr8E8rOirrfIk04veCZlNZBb',
-    qcloudSecretKey: 'MXWIsFiFqLas1yqX2LSO8wmePzNgokW7',
-    wxMessageToken: 'weixinmsgtoken',
-    networkTimeout: 30000,
+    ...dataEnvObj,
     // ===============
     port: '5757',
     rootPathname: '',
